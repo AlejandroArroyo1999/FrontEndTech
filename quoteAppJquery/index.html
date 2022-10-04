@@ -24,6 +24,40 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js" integrity="sha512-VjRpiWhUqdNa9bwBV7LnlG8CwsCVPenFyOQTSRTOGHw/tjtME96zthh0Vv9Itf3i8w4CkUrdYaS6+dAt1m1YXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script.js"></script>
+        <script>
+            const quotes = [
+                {quote: "Hello", author: "Alejandro"},
+                {quote: "I", author: "Alejandro"},
+                {quote: "am", author: "Alejandro"},
+                {quote: "Alex", author: "Alejandro"},
+                {quote: "What", author: "Alejandro"},
+                {quote: "is", author: "Alejandro"},
+                {quote: "your", author: "Alejandro"},
+                {quote: "name", author: "Alejandro"},
+                {quote: "?", author: "Alejandro"},
+                {quote: "Goodbye", author: "Alejandro"}
+            ];
+
+            const getQuoteAndAuthor = function() {
+                let index = Math.floor(Math.random() * 10);
+                console.log(index);
+                return quotes[index];
+            }
+
+            $(document).ready(function() {
+                let newquote = getQuoteAndAuthor();
+                let randomColor = Math.floor(Math.random()*16777215).toString(16);
+                $("body, #tweet, #tumblr, #new-quote").animate({backgroundColor: randomColor});
+                $("#text").text(newquote.quote);
+                $("#author").text(newquote.author);
+                $("#new-quote").click(function(){
+                    newquote = getQuoteAndAuthor();
+                    randomColor = Math.floor(Math.random()*16777215).toString(16);
+                    $("body, #tweet, #tumblr, #new-quote").animate({backgroundColor: randomColor});
+                    $("#text").text(newquote.quote);
+                    $("#author").text(newquote.author);
+                });
+            })
+        </script>
     </body>
 </html>

@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 const quotes = [
     {quote: "Hello", author: "Alejandro"},
     {quote: "I", author: "Alejandro"},
