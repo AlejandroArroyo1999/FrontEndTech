@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+#quote-box {
+    background-color: white;
+    margin: auto; /* 1 */
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#text, #author {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#text {
+    font-size: x-large;
+    text-align: center;
+}
+#author {
+    font-size: medium;
+    text-align: right;
+}
+
+#new-quote {
+    height: 40px;
+    background-color: gray;
+    margin-left: 125px;
+    color: white;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+}
