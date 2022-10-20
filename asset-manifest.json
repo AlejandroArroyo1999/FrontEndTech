@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/FrontEndTech/tree/main/markdown-reviewer/static/css/main.8200d64e.css",
-    "main.js": "/FrontEndTech/tree/main/markdown-reviewer/static/js/main.19db72da.js",
-    "index.html": "/FrontEndTech/tree/main/markdown-reviewer/index.html",
-    "main.8200d64e.css.map": "/FrontEndTech/tree/main/markdown-reviewer/static/css/main.8200d64e.css.map",
-    "main.19db72da.js.map": "/FrontEndTech/tree/main/markdown-reviewer/static/js/main.19db72da.js.map"
+    "main.css": "/FrontEndTech/static/css/main.8200d64e.css",
+    "main.js": "/FrontEndTech/static/js/main.19db72da.js",
+    "index.html": "/FrontEndTech/index.html",
+    "main.8200d64e.css.map": "/FrontEndTech/static/css/main.8200d64e.css.map",
+    "main.19db72da.js.map": "/FrontEndTech/static/js/main.19db72da.js.map"
   },
   "entrypoints": [
     "static/css/main.8200d64e.css",
