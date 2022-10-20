@@ -1,8 +1,6 @@
-import './App.css';
-import Editor from './Editor';
-import Previewer from './Previewer';
 import React from 'react';
 import { marked } from 'marked';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -30,6 +28,40 @@ class App extends React.Component {
         <Previewer result={this.state.output} />
       </div>
     )
+  }
+}
+
+class Editor extends React.Component {
+  constructor(props) {
+      super(props);
+  }
+  render() {
+      return (
+          <div className="Editor">
+              <div className="header">
+                  Editor
+              </div>
+              <textarea id="editor" rows={11} value={this.props.input} onChange={this.props.changeCallback} />
+          </div>
+      )
+  }
+}
+
+class Previewer extends React.Component {
+  constructor(props) {
+      super(props);
+  }
+  render() {
+      return (
+          <div className="Previewer">
+              <div className="header">
+                  Previewer
+              </div>
+              <div id="preview" dangerouslySetInnerHTML={{ __html: this.props.result }}>
+                  
+              </div>
+          </div>
+      )
   }
 }
 

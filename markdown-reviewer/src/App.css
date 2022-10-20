@@ -3,7 +3,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px red solid;
 }
 
 textarea, #preview {
